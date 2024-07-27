@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navigation {
+  margin-top: 23px;
+  font-family: var(--font1);
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  /* font-size: 25px; */
+  display: flex;
+}
+.nav-left span {
+  padding-top: 9px;
+  font-size: 30px;
+}
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0 75px;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.nav-left ul li {
+  list-style: none;
+  margin: 4px 10px;
+  font-family: var(--font2);
+  transition: all 0.3s ease-in-out;
+}
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+}
+.nav-left ul li a:hover {
+  color: var(--main-bg-color);
+  font-weight: bolder;
+}
+.content {
+  
+  height: 100%;
+  display: flex;
+  margin-top: 28px;
+  padding: 5px;
+  position: relative;
+}
+
+.content::after {
+  content: "";
+  background-image: url("..//imgaes/computer-in.jpg");
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  opacity: 0.13;
+  border-radius: 10px;
+}
+.content-left {
+  font-family: var(--font1);
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  font-size: 11px;
+  padding: 40px;
+  z-index: 1;
+}
+
+.content-right img {
+  height: 230px;
+  border: 2px solid black;
+  /* border-radius: 200px; */
+}
+.home-articles {
+  padding-top: 12px;
+  margin-top: 22px;
+  background-color: rgb(248, 239, 239, 0.3);
+  position: relative;
+}
+.year-box{
+  
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  /* background-color: red; */
+  right: 0px;
+  top: 100px;
+   font-size: 17px;
+}
+.year-box div{
+  margin: 10px  0px;
+}
+.home-article {
+  display: flex;
+  margin: 25px;
+}
+.home-article img {
+  width: 300px;
+}
+.home-article-content {
+  align-self: center;
+  padding: 15px;
+}
+.home-article-content a{
+  text-decoration: none;
+  color: black;
+}
+.footer {
+  height: 40px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.footer a {
+  color: white;
+}
